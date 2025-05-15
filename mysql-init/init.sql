@@ -34,7 +34,14 @@ CREATE TABLE IF NOT EXISTS recipes (
 ) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 INSERT INTO recipes (title, description, ingredients, steps, image_url, user_id)
-VALUES 
+VALUES (
+  'Spaghetti Carbonara',
+  'Un classique italien avec une sauce crémeuse aux œufs et au fromage.',
+  '- 200g de spaghetti\n- 100g de pancetta\n- 2 œufs\n- 50g de parmesan râpé\n- Sel, poivre',
+  '1. Cuire les spaghetti.\n2. Faire revenir la pancetta.\n3. Battre les œufs avec le parmesan.\n4. Mélanger le tout hors du feu.\n5. Saler, poivrer, servir chaud.',
+  'https://images.unsplash.com/photo-1651585594107-859f80b4ca3a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  1 -- ID de l'utilisateur qui crée la recette,
+),
 (
   'Spaghetti Bolognaise',
   'Un grand classique de la cuisine italienne, avec une sauce tomate mijotée à la viande hachée.',
